@@ -1,0 +1,39 @@
+# Notifications Frontend
+
+A responsive React + Material UI frontend for the campus notification platform.
+
+## Features
+
+- Displays all notifications with pagination, limit, and type filtering
+- Shows a dedicated Priority Inbox for top `n` notifications
+- Distinguishes between viewed and new notifications using localStorage
+- Uses Material UI for polished styling and responsive layout
+- Fetches notifications from the evaluation API via query parameters
+
+## Install
+
+`
+``bash
+cd "c:\Ankit Mittal\notifications-frontend"
+npm install
+```
+
+## Run locally
+
+```bash
+npm run dev
+```
+
+Then open `http://localhost:3007`.
+
+## Build
+
+```bash
+npm run build
+```
+
+## Notes
+
+- The app expects the notifications API at `http://20.207.122.201/evaluation-service/notifications`
+- If the route requires authentication, the browser will attempt to use credentials by default
+- Use the `Priority` tab to view the top notifications sorted by type and recency
